@@ -1,13 +1,15 @@
-BIN = quine
+TARG = quine
+SRC = quine.c
+OBJ = $(SRC:.c=.o)
 
 CFLAGS = -Wall -O2
 
-all: ${BIN}
-
-install: ${BIN}
-	cp ${BIN} ${HOME}/bin
+$(TARG):	$(OBJ)
 
 clean:
-	rm -f ${BIN} *.o
+	rm -f $(TARG) $(OBJ)
 
 .PHONY: all clean
+
+.c.o:
+	$(CC) $(CFLAGS) -c -o $@ $<
