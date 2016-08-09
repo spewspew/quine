@@ -4,7 +4,8 @@
 char *prog = "#include <stdio.h>\n"
 	"#include <stdlib.h>\n"
 	"\n"
-	"char *prog = \"@\n"
+	"char *prog = \"@\";\n"
+	"\n"
 	"void\n"
 	"printq(void)\n"
 	"{\n"
@@ -16,7 +17,7 @@ char *prog = "#include <stdio.h>\n"
 	"\t\tbreak;\n"
 	"\tcase '\\n':\n"
 	"\t\tif(c[1] == '\\0')\n"
-	"\t\t\tprintf(\"\\\\n\\\";\\n\");\n"
+	"\t\t\tprintf(\"\\\\n\");\n"
 	"\t\telse\n"
 	"\t\t\tprintf(\"\\\\n\\\"\\n\\t\\\"\");\n"
 	"\t\tbreak;\n"
@@ -66,7 +67,7 @@ printq(void)
 		break;
 	case '\n':
 		if(c[1] == '\0')
-			printf("\\n\";\n");
+			printf("\\n");
 		else
 			printf("\\n\"\n\t\"");
 		break;
