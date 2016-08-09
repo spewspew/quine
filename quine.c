@@ -27,7 +27,7 @@ char *prog = "#include <stdio.h>\n"
 	"\tcase '\\\\':\n"
 	"\t\tprintf(\"\\\\\\\\\");\n"
 	"\t\tbreak;\n"
-	"\tcase '\\\"':\n"
+	"\tcase '\"':\n"
 	"\t\tprintf(\"\\\\\\\"\");\n"
 	"\t\tbreak;\n"
 	"\t}\n"
@@ -77,7 +77,7 @@ printq(void)
 	case '\\':
 		printf("\\\\");
 		break;
-	case '\"':
+	case '"':
 		printf("\\\"");
 		break;
 	}
