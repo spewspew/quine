@@ -1,5 +1,5 @@
-TARG = quine
-SRC = quine.c
+TARG ?= quine
+SRC = $(TARG).c
 OBJ = $(SRC:.c=.o)
 
 CFLAGS = -Wall -O2
