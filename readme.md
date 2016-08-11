@@ -1,8 +1,8 @@
 Quine.c is my first self-reproducing program. Nothing fancy.
 About the least inventive quine you can write.
 
-I actually prefer insquine.c a little more even though it
-is bigger since it inserts itself at the @ symbol.
+Even though it is bigger, I actually prefer insquine.c a little more
+because it inserts itself at the @ symbol.
 
 Rotquinegen.c is a program that generates the
 file rotquine.c. Rotquine.c is a quine that stores its
