@@ -10,9 +10,10 @@ representation of itself shifted out of the ascii range
 so that you are not able to run strings against it to
 easily check if there is embedded source code in the
 executable. This makes Ken Thompson's trusting trust
-attack harder to detect.
+attack harder to detect. If a cryptographic cipher were
+used the attack would be practically impossible to detect.
 
 I then adapted insquine.c to insrotquinegen.c which generates
 insrotquine.c. This quine removes the only remaining ascii
-string that could possibly give something away from the data
-section of the resulting executable.
+string (`"char prog[] = {"`) that could potentially indicate that
+the executable is a quine.
