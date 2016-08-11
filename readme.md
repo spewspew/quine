@@ -15,5 +15,5 @@ used the attack would be practically impossible to detect.
 
 I then adapted insquine.c to insrotquinegen.c which generates
 insrotquine.c. This quine removes the only remaining ascii
-string (`"char prog[] = {"`) that could potentially indicate that
-the executable is a quine.
+string (`"char prog[] = {"` that can be found in rotquine.c)
+that could potentially indicate that the executable is a quine.
