@@ -7,7 +7,7 @@ CFLAGS = -Wall -O2
 $(TARG):	$(OBJ)
 
 clean:
-	rm -f $(TARG) $(OBJ)
+	rm -f $(TARG) $(OBJ) $(TARG).exe
 
 .PHONY: all clean
 
